@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIST Digit Recognition - CNN with TensorFlow.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 MNIST Digit Recognition</h1>
+        <p class="subtitle">Convolutional Neural Network with TensorFlow.js</p>
+
+        <div class="section">
+            <div class="section-title">📊 Model Status</div>
+            <div id="status">Ready to train model...</div>
+            
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill">0%</div>
+                </div>
+                <div id="progressText">Training...</div>
+            </div>
+
+            <div class="controls">
+                <button id="trainBtn" onclick="trainModel()">🚀 Train Model</button>
+                <button id="evaluateBtn" onclick="evaluateModel()" disabled>📈 Evaluate Model</button>
+                <button id="clearBtn" onclick="clearCanvas()">🗑️ Clear Canvas</button>
+            </div>
+
+            <div class="metrics" id="metricsContainer" style="display: none;">
+                <div class="metric-card">
+                    <div class="metric-label">Training Accuracy</div>
+                    <div class="metric-value" id="trainAccuracy">--</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Test Accuracy</div>
+                    <div class="metric-value" id="testAccuracy">--</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Training Loss</div>
+                    <div class="metric-value" id="trainLoss">--</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">✏️ Draw a Digit</div>
+            <div class="canvas-container">
+                <div class="canvas-wrapper">
+                    <canvas id="drawCanvas" width="280" height="280"></canvas>
+                    <div class="canvas-label">Draw Here</div>
+                </div>
+            </div>
+            <button id="predictBtn" onclick="predictDigit()" disabled style="width: 100%; margin-top: 20px;">🔮 Predict Digit</button>
+            
+            <div class="prediction-result" id="predictionResult">
+                <div class="prediction-digit" id="predictedDigit">-</div>
+                <div class="prediction-confidence" id="predictionConfidence">Confidence: --%</div>
+                
+                <div class="predictions-grid" id="predictionsGrid"></div>
+            </div>
+        </div>
+
+        <div class="section" id="testSection" style="display: none;">
+            <div class="section-title">🧪 Test Samples</div>
+            <div id="testResults"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
