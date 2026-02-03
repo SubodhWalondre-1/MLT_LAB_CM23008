@@ -32,6 +32,7 @@ After successful completion of this lab, students will be able to:
 ### 2. Linear Regression with Synthetic Data
 - Train a simple regression model using synthetic data  
 - Implement model using `tf.sequential()` and `tf.layers.dense()`
+- https://subodhwalondre-1.github.io/digit_recognition/
 
 ### 3. Digit Recognition (MNIST Dataset)
 - Train a Convolutional Neural Network (CNN)  
