@@ -41,6 +41,7 @@ After successful completion of this lab, students will be able to:
 ### 4. Text Sentiment Analysis
 - Classify text as **positive** or **negative**  
 - Use RNN or pre-trained sentiment analysis models  
+- https://animal-identifier-system.netlify.app/
 
 ### 5. Image Classification using Pre-trained Model (MobileNet)
 - Load MobileNet model  
