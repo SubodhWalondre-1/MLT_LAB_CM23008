@@ -46,6 +46,7 @@ After successful completion of this lab, students will be able to:
 ### 5. Image Classification using Pre-trained Model (MobileNet)
 - Load MobileNet model  
 - Classify images directly in the browser  
+- https://web-attendance.netlify.app/
 
 ### 6. Webcam-Based Object Detection
 - Access webcam using Web APIs  
