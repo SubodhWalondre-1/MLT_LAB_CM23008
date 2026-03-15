@@ -41,16 +41,16 @@ After successful completion of this lab, students will be able to:
 ### 4. Text Sentiment Analysis
 - Classify text as **positive** or **negative**  
 - Use RNN or pre-trained sentiment analysis models  
-- https://animal-identifier-system.netlify.app/
 
 ### 5. Image Classification using Pre-trained Model (MobileNet)
 - Load MobileNet model  
-- Classify images directly in the browser  
-- https://web-attendance.netlify.app/
+- Classify images directly in the browser
+- https://animal-identifier-system.netlify.app/ 
 
 ### 6. Webcam-Based Object Detection
 - Access webcam using Web APIs  
-- Capture real-time frames and classify objects  
+- Capture real-time frames and classify objects
+- https://web-attendance.netlify.app/
 
 ### 7. Pose Detection using PoseNet
 - Detect human body keypoints  
