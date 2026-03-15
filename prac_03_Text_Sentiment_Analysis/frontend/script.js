@@ -7,7 +7,7 @@
 console.log("TensorFlow.js loaded:", tf ? "Yes" : "No");
 
 // Backend API URL (Change this if needed)
-const API_URL = "http://localhost:8000";
+const API_URL = "https://subodhwalondre-1-sentiment-backend.hf.space";
 
 /**
  * Loads example text into the input box
